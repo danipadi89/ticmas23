@@ -1,0 +1,299 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    background: #3a3838;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+
+#container{
+    display: flex;
+    border-style: groove;
+    background-color: rgb(115, 135, 243);
+    padding: 15px;
+    justify-content:space-around;
+   
+}
+h1{
+font-size: 40px;
+color: #ffffff;
+
+}
+
+.logo{
+    width: 100px;
+    
+}
+article {
+    background-color: rgb(150, 184, 216);
+    width: 20%;
+    box-shadow: 5px 10px 7px rgba(0, 0, 0, 0.5);
+    
+}
+
+aside {
+    background-color: #ccc;
+    width: 70%;
+    box-shadow: 5px 10px 7px rgba(0, 0, 0, 0.5);
+    
+}
+
+#form  {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin:auto;
+   
+}
+#form,  #contacto, img {
+    display: left;
+    justify-content: space-around;
+}
+
+#form2  {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin:auto;
+   
+}
+#form2,  #contacto2, img {
+    display: left;
+    justify-content: space-around;
+}
+
+.icono {
+    width: 45px;
+    height: 45px;
+}
+
+
+
+
+#contacto li {
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    margin-left: 20px;
+    
+}
+
+#contacto li a {
+    display: inline-block;
+    color: #888585;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 5px;
+    }
+
+#contacto2 li {
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    margin-left: 20px;
+    
+}
+
+#contacto2 li a {
+    display: inline-block;
+    color: #888585;
+    text-decoration: none;
+    text-align: justify;
+    line-height: 20px;
+    margin-left: 5px;
+    }    
+    
+#imagen_aside, img {
+    display: flex;
+    justify-content: flex-end;
+
+
+   
+}
+
+
+
+.perfil {
+    width: 200px;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(144, 143, 143, 0.5);
+    border-radius: 50%;
+    border: solid .125rem #2e4662;
+    margin-top: 15px; 
+}
+.icono {
+    width: 30px;
+}
+span {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+h2 {
+    text-align: center;
+    color: #5e5d5d;
+}
+h3 {
+    color: rgb(5, 5, 5);
+    font-size: 25px;
+    border: 2px solid rgba(26, 25, 25, 0.671);
+    box-shadow: 5px 5px 7px rgba(90, 90, 90, 0.644);
+    text-align: center;
+}
+#aptitudes {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin:auto;
+}
+#experiencia {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin:auto;
+}
+#deporte {
+    display: flex;
+    justify-content: center;
+   width: 80%;
+   margin: auto;
+   
+}
+
+.titulo_deporte {
+    width: 80%;
+    margin: auto;
+}
+
+p{
+    text-align: center;
+    color: #080808;
+    font-size: 18px;
+}
+ol {
+    color: #888585;
+    font-size: 18px;
+}
+svg {
+    color: #0b3d7b;
+}
+
+.parrafo_deporte {
+    text-align: center;
+}
+figure {
+   
+    margin: 0%;
+    float: left;
+    margin-bottom: 20px;
+    
+}
+.ima {
+    border-radius: 6%;
+}
+.ima:hover {
+   transform: scale(1.05)
+   
+    }
+.ima:hover {
+    transition: all 300ms;
+    box-shadow: 5px 5px 10px #565656,  -5px -5px 10px #8a8a8a;
+}    
+#idiomas {
+    margin-top: 40px;
+    display: -moz-inline-stack;
+    justify-content: space-around;
+   width: 50%;
+   margin: auto;
+
+   
+}
+button {
+    color: #000000;
+    background-color:cadetblue;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:900px){
+    #contenedor {
+        display: block;
+         margin: auto;
+     }
+     article {
+        width: 100%;
+       
+    } 
+    aside {
+        width: 100%;
+  } 
+    #idionas {
+        width: 100%;
+    } 
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:400px){
+    #herramientas {
+        display: grid;
+    }
+    h1{
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width:530px){
+    #idiomas {
+        display: grid;
+        
+    }
+}
+
+.lenguaje h3
+{
+    padding-bottom: 40px;
+}
+.lenguaje .texto
+{
+    color: #000000;
+}
+.lenguaje .porcentaje
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #081921;
+    display: block;
+    margin-top: 8px;
+}
+.lenguaje .porcentaje div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+#Deportes {
+    margin-top: 30px;
+    display: absolute;
+    justify-content: space-around;
+   width: 90%;
+   margin-left: 110px;
+   
+}
+
+
